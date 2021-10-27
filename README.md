@@ -17,4 +17,5 @@
 3. UOT100数据集中图片命名方式为`i.jpg`，不同于VID的`00000i.jpg`，对`gen_json.py`中部分内容进行修改（详见第73行-第76行）
 
 ## 运行结果  
-
+![Image text](https://github.com/NiceBlooming/pysot-owndataset/blob/e89248d21ac5a181b0560a1b1ce64785a7ab249f/crop511/0.0.x.jpg)
+![Image text](https://github.com/NiceBlooming/pysot-owndataset/blob/e89248d21ac5a181b0560a1b1ce64785a7ab249f/crop511/0.0.z.jpg)
