@@ -8,7 +8,7 @@ from concurrent import futures
 import sys
 import time
 
-UOT_base_path = 'E:\\Datasets\\tracking\\UOT100'
+UOT_base_path = './UOT100'
 ann_base_path = UOT_base_path
 
 
@@ -100,34 +100,6 @@ def crop_video(video, crop_path, instanc_size):
 
 
 def main(instanc_size=511, num_threads=24):
-    uot_dataset = ['AntiguaTurtle', 'ArmyDiver1', 'ArmyDiver2', 'ArmyDiver3', 'Ballena', 'BallisticMissile1',
-                   'BallisticMissile2', 'BlueFish1', 'BlueFish2', 'BoySwimming', 'CenoteAngelita', 'CleverOctopus',
-                   'ClickerAndTarget', 'CoconutOctopus1', 'CoconutOctopus2', 'ColourChangingSquid', 'CoralGardenSea1',
-                   'CoralGardenSea2', 'CrabTrap', 'CrayFish', 'CressiGuillaumeNeri1', 'CressiGuillaumeNeri2',
-                   'Cuttlefish', 'DeepOceanLostWorld', 'DeepSeaFish', 'DefenseInTheSea1', 'DefenseInTheSea2',
-                   'Diving360Degree1', 'Diving360Degree2', 'Diving360Degree3', 'Dolphin1', 'Dolphin2',
-                   'ElephantSeals', 'FightToDeath', 'FightingEels1', 'FightingEels2', 'FishFollowing', 'Fisherman',
-                   'FishingAdventure', 'FishingBait', 'FlukeFishing1', 'FlukeFishing2', 'FreeDiver1', 'FreeDiver2',
-                   'GarryFish', 'GiantCuttlefish1', 'GiantCuttlefish2', 'GreenMoreyEel1', 'GreenMoreyEel2',
-                   'GreenMoreyEel3',
-                   'GuillaumeNery', 'HappyTurtle1', 'HappyTurtle2', 'HappyTurtle3', 'HeartShape', 'HoverFish1',
-                   'HoverFish2',
-                   'JerkbaitBites', 'Kleptopus1', 'Kleptopus2', 'LargemouthBass', 'LittleMonster', 'Lobsters1',
-                   'Lobsters2',
-                   'MantaRescue1', 'MantaRescue2', 'MantaRescue3', 'MantaRescue4', 'MantisShrimp', 'MississippiFish',
-                   'MonsterCreature1', 'MonsterCreature2', 'MuckySecrets1', 'MuckySecrets2', 'MythBusters',
-                   'NeryClimbing',
-                   'OceanFloorSensor', 'Octopus1', 'Octopus2', 'PinkFish', 'PlayingTurtle', 'RedSeaReptile',
-                   'Rocketman',
-                   'ScubaDiving1', 'ScubaDiving2', 'SeaDiver', 'SeaDragon', 'SeaTurtle1', 'SeaTurtle2', 'SeaTurtle3',
-                   'SharkCloseCall1', 'SharkCloseCall2', 'SharkSuckers1', 'SharkSuckers2', 'Skagerrak', 'SofiaRocks1',
-                   'SofiaRocks2',
-                   'Steinlager', 'Submarine', 'ThePassage']
-    if "AntiguaTurtle" in uot_dataset:
-        print("sss")
-    else:
-        print("sssssss")
-
     crop_path = './crop{:d}'.format(instanc_size)
     if not isdir(crop_path):
         mkdir(crop_path)
